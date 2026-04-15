@@ -1,0 +1,45 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Node / frontend build artefacts
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Laravel local environment files
+.env
+.env.*
+!.env.example
+
+# Composer cache / dev tools
+vendor
+
+# Storage (runtime-generated; directories are created in the Dockerfile)
+storage/framework/sessions/*
+storage/framework/views/*
+storage/framework/cache/*
+storage/logs/*
+
+# Bootstrap cache (regenerated during build)
+bootstrap/cache/*.php
+
+# Tests
+tests
+phpunit.xml
+.phpunit.result.cache
+
+# IDE / editor files
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
